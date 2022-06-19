@@ -1,0 +1,8 @@
+from prettytable import from_csv
+from prettytable import DOUBLE_BORDER
+
+with open("reportcard.csv") as fp:
+    reportcard = from_csv(fp)
+
+reportcard.set_style(DOUBLE_BORDER)
+print(reportcard)    
